@@ -21,7 +21,7 @@ data$Sub_metering_1 <- as.numeric(as.character(data$Sub_metering_1))
 data$Sub_metering_2 <- as.numeric(as.character(data$Sub_metering_2))
 
 # Create the PNG file
-png("ExplorDataAnalysis_CourseProject/plot3.png")
+png("Explore_Project/plot3.png")
 plot(data$DateTime, data$Sub_metering_1, ylab="Energy sub metering", xlab="", type="n")
 lines(data$DateTime, data$Sub_metering_1, type="l", col="black")
 lines(data$DateTime, data$Sub_metering_2, type="l", col="red")

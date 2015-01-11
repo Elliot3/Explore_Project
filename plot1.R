@@ -20,7 +20,7 @@ data <- data[which(data$Date == "2007-02-01" | data$Date == "2007-02-02"),]
 data$Global_active_power <- as.numeric(as.character(data$Global_active_power)) 
 
 # Create the PNG file
-png("ExplorDataAnalysis_CourseProject/plot1.png")
+png("Explore_Project/plot1.png")
 hist(data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 
 # Close the PNG file

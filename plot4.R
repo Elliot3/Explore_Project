@@ -24,7 +24,7 @@ data$Global_reactive_power <- as.numeric(as.character(data$Global_reactive_power
 data$Voltage <- as.numeric(as.character(data$Voltage))
 
 # Create the PNG file
-png("ExplorDataAnalysis_CourseProject/plot4.png")
+png("Explore_Project/plot4.png")
 par(mfcol=c(2,2))
 
 # Plot #1
@@ -35,7 +35,7 @@ plot(data$DateTime, data$Sub_metering_1, ylab="Energy sub metering", xlab="", ty
 lines(data$DateTime, data$Sub_metering_1, type="l", col="black")
 lines(data$DateTime, data$Sub_metering_2, type="l", col="red")
 lines(data$DateTime, data$Sub_metering_3, type="l", col="blue")
-legend("topright", lwd=2, col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", lwd=2, bty="n", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 # Plot 3
 plot(data$DateTime, data$Voltage, type="l", xlab="datetime", ylab="Voltage")
